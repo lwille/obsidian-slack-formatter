@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-slack-formatter",
+	"name": "slack-formatter",
+	"version": "0.0.1",
+	"minAppVersion": "0.11.5",
+	"description": "Format and copy current note for Slack",
+	"author": "lwille",
+	"authorUrl": "https://github.com/lwille",
+	"isDesktopOnly": false
+}
