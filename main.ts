@@ -31,7 +31,7 @@ export default class SlackFormatter extends Plugin {
           : activeView.editor.getValue();
         const formatted = [
           // TODO: make replacements configurable
-          [/^## (.*)$/gm, "* $1 *"],
+          [/^##\s+(.*)\s?$/gm, "*$1*"],
           [/\[\[(.*)\]\]/gm, "$1"]
         ].reduce((s, args) => s.replace.apply(s, args), text);
         navigator.clipboard.writeText(formatted);
